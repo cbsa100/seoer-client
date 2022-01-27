@@ -15,12 +15,12 @@ const WordCount = ({ data }) => {
             {data.canonical[1] === data.canonical[0] ? (
               <>
                 <div className='big-text'>כתובת הקנוניקל תקינה</div>
-                <div className='success'>{data.canonical[0]}</div>
+                <div className='url success'>{decodeURI(data.canonical[0])}</div>
               </>
             ) : (
               <>
                 <div className='big-text'>כתובת הקנוניקל לא תקינה</div>
-                <div className='warning'>{data.canonical[0]}</div>
+                <div className='url warning'>{decodeURI(data.canonical[0])}</div>
               </>
             )}
           </div>

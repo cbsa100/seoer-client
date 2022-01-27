@@ -26,5 +26,5 @@ ReactDOM.render(
       </ThemeProvider>
     </CacheProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('react-root')
 );

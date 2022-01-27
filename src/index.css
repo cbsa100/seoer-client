@@ -60,3 +60,9 @@ h2 {
 .success {
   color: green;
 }
+.url {
+  direction: ltr;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
