@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TextField } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
-const Search = ({ loading, handleClick }) => {
+const Search = ({ loading, handleClick, setValidUrl }) => {
   const [textFieldValue, setTextFieldValue] = useState('');
   return (
     <div className='search-container'>
@@ -10,7 +10,10 @@ const Search = ({ loading, handleClick }) => {
         id='domain'
         type='url'
         value={textFieldValue}
-        onChange={(e) => setTextFieldValue(e.target.value)}
+        onChange={e => {
+          setValidUrl(true);
+          setTextFieldValue(e.target.value);
+        }}
         sx={{
           maxWidth: 1,
           width: 500,
