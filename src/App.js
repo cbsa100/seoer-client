@@ -20,9 +20,19 @@ const App = () => {
     isUrl(url) &&
       axios
         .all([
-          axios.get(`http://localhost:8080/api/seo/wordcount?targeturl=${encodeURIComponent(url)}`),
-          axios.get(`http://localhost:8080/api/seo/links?targeturl=${encodeURIComponent(url)}`),
-          axios.get(`http://localhost:8080/api/seo/headings?targeturl=${encodeURIComponent(url)}`),
+          axios.get(
+            `https://seoer-server.herokuapp.com/api/seo/wordcount?targeturl=${encodeURIComponent(
+              url
+            )}`
+          ),
+          axios.get(
+            `https://seoer-server.herokuapp.com/api/seo/links?targeturl=${encodeURIComponent(url)}`
+          ),
+          axios.get(
+            `https://seoer-server.herokuapp.com/api/seo/headings?targeturl=${encodeURIComponent(
+              url
+            )}`
+          ),
         ])
         .then(data => {
           setApiData({ wordCount: data[0].data, links: data[1].data, headings: data[2].data });
