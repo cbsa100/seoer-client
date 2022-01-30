@@ -15,8 +15,8 @@ const App = () => {
     headings: null,
     canonical: null,
   });
-  //const serverUrl = 'https://seoer-server.herokuapp.com';
-  const serverUrl = 'http://localhost:8080';
+  const serverUrl = 'https://seoer-server.herokuapp.com';
+  //const serverUrl = 'http://localhost:8080';
 
   function isUrl(s) {
     var regexp =
