@@ -24,6 +24,10 @@ const WordCount = ({ data }) => {
               </>
             )}
           </div>
+          <div>
+            <div className='big-text'>Robots.txt</div>
+            <div>{data.robots}</div>
+          </div>
         </div>
       ) : (
         <>
