@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/seoer-client/static/css/main.9948c4c6.css",
-    "main.js": "/seoer-client/static/js/main.7f8a1ee1.js",
+    "main.js": "/seoer-client/static/js/main.02d6b3af.js",
     "index.html": "/seoer-client/index.html",
     "main.9948c4c6.css.map": "/seoer-client/static/css/main.9948c4c6.css.map",
-    "main.7f8a1ee1.js.map": "/seoer-client/static/js/main.7f8a1ee1.js.map"
+    "main.02d6b3af.js.map": "/seoer-client/static/js/main.02d6b3af.js.map"
   },
   "entrypoints": [
     "static/css/main.9948c4c6.css",
-    "static/js/main.7f8a1ee1.js"
+    "static/js/main.02d6b3af.js"
   ]
 }
