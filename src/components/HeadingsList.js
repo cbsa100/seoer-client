@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BulletList } from 'react-content-loader';
 
 const HeadingsList = ({ data }) => {
-  console.log(data);
   const [headingToShow, setHeadingToShow] = useState('h');
   return (
     <div className='card'>
@@ -83,8 +82,8 @@ const HeadingsList = ({ data }) => {
           </div>
           <div className='list'>
             <ul>
-              {data.headings[headingToShow].map(e => (
-                <li>{e}</li>
+              {data.headings[headingToShow].map((e, i) => (
+                <li key={i}>{e}</li>
               ))}
             </ul>
           </div>

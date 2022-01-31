@@ -8,8 +8,8 @@ const inlinks = ({ data }) => {
       {data ? (
         <div className='list'>
           <ul>
-            {data.inlinks.map(e => (
-              <li>
+            {data.inlinks.map((e, i) => (
+              <li key={i}>
                 <a href={e.href}>
                   {e.text && !e.text.trim()
                     ? 'קישור ללא טסקט'

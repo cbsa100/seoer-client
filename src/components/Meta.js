@@ -2,7 +2,6 @@ import React from 'react';
 import { Code } from 'react-content-loader';
 
 const Meta = ({ data }) => {
-  console.log(data);
   return (
     <div className='card'>
       <h2>תגיות מטא</h2>

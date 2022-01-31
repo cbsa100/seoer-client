@@ -8,8 +8,8 @@ const Outlinks = ({ data }) => {
       {data ? (
         <div className='list'>
           <ul>
-            {data.outlinks.map(e => (
-              <li>
+            {data.outlinks.map((e, i) => (
+              <li key={i}>
                 <a href={e.href}>
                   {e.text && !e.text.trim()
                     ? 'קישור ללא טסקט'
